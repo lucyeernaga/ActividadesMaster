@@ -1,0 +1,3 @@
+paleta colores
+- blanco:
+- azul: 
