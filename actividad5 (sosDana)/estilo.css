@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #11a189;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link--logo {
+    width: 250px;
+    height: auto;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+}
+
+.header__menu--item {
+    text-decoration: none;
+}

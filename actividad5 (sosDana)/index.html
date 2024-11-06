@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
+
+    <!-- Link a estilo CSS -->
+     <link rel="stylesheet" href="estilo.css">
     
 </head>
 <body>
+    <!-- Header -->
     <div class="header">
         <div class="header__logo">
-            <a class="header__link" href="./img/logoBlancoDana.png">
+            <a class="header__link" href="./index.html">
+                <img class="header__link--logo" src="./img/logoBlancoDana.png" alt="logoBlanco">
             </a>
         </div>
 
         <nav class="header__nav">
             <ul class="header__menu">
-                <li class="header__menu--item">Catástrofes</li>
-                <li class="header__menu--item">Dana Valencia</li>
-                <li class="header__menu--item">Voluntariado</li>
-                <li class="header__menu--item">Contacto</li>
+                <li class="header__menu--item"><a href="#">Imágenes</a></li>
+                <li class="header__menu--item"><a href="#">Donaciones</a></li>
+                <li class="header__menu--item"><a href="#">Voluntariado</a></li>
+                <li class="header__menu--item"><a href="#">Contacto</a></li>
             </ul>
         </nav>
+    </div>
+
+    <!-- Main -->
+    <main class="main">
+        <section class="section">
+            <h1>Los peores desastres naturales ocurridos en España en los últimos años</h1>
+            <p class="section__p"></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p class="footer__p"></p>
+
     </div>
     
 </body>
