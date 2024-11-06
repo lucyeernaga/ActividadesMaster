@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usuario zone</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header{
+            background-color: burlywood;
+            color: black;
+            font-size: 16 px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .perfil{
+            text-align: center;
+            padding: 20px;
+            display: inline-block;
+            background-color: rgb(247, 249, 249);
+            border-radius: 100px;
+            margin: 20px;
+            height: 190;
+            
+        }
+
+        .usuario{
+            color: black;
+            padding: 5px;
+            font-size: 25px;
+            display: flex;
+            justify-content:center;
+            align-items: end;
+            
+        }
+
+        .descripcion{
+            margin: 20px;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .editar-perfil{
+            background-color: aquamarine;
+            padding: 8px 16px;
+            width: 30;
+            border-radius: 30px;
+            display: inline-block;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            font-size: 24px;
+            gap: 60px;
+            padding: 60px;
+        }
+
+        .card{
+            background-color: rgb(194, 194, 194);
+            color: black;
+            padding: 20px ;
+            flex: 1 0 ;
+            border-radius: 20px;
+        }
+        
+        
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="perfil">
+            <img src="chicote.jpg" alt="img chicote">
+            <div class="usuario"><strong>Chicote</strong></div>
+            <div class="descripcion"> Alberto Chicote
+                <p>Chef y escritor español.</p>
+                <p>Más de 25 años en la alta cocina.</p></div>
+            <div class="editar-perfil">Editar Perfil</div>
+        </div>
+        <div class="content">
+            <div class="card">Tus Recetas</div>
+            <div class="card">Tus Favoritas</div>
+            <div class="card">Guardados</div>
+            <div class="card">Opiniones</div>
+            <div class="card">Privacidad</div>
+            <div class="card">Configuración</div>
+            <div class="card cardDoble">Cerrar Sesión</div></div>
+        </div>
+        
+        <div class="footer">Pie</div>
+    </div>
+</body>
+</html>
