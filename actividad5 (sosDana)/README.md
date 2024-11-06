@@ -1,3 +1,3 @@
 paleta colores
-- blanco:
-- azul: 
+- blanco:   #ffffff
+- azul:     #184c9b
