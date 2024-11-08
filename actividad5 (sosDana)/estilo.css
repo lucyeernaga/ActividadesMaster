@@ -6,24 +6,13 @@
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Arial;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Asegura que el body tenga al menos la altura completa de la ventana */
 }
     
-h1 {
-    font-family: helvetica;
-    font-size: 30pt;
-    margin-bottom: 20px;
-}
-
-p {
-    font-family: Helvetica;
-    font-size: 16px;
-    text-align: left;
-}
 
 .header {
     background-color: #3d405b;
@@ -69,8 +58,8 @@ p {
 }
 
 .main__img {
-    max-width: 100%; /* Asegura que las imágenes no se salgan del contenedor */
-    height: auto;    /* Mantiene la relación de aspecto */
+    max-width: 100%; /* para q las imágenes no se salgan del contenedor */
+    height: auto;  
 }
 
 .picture-container {
@@ -79,14 +68,25 @@ p {
 }
 
 
-
 .overlay {
     position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Ajusta para centrar completamente */
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    gap: 2px;
     z-index: 2; /* para que el contenido se superponga a la imagen */
+    padding: 0 10px;
+}
+
+.overlay-p {
+    color: black;
+    font-size: 14px;
+    z-index: 3;
 }
 
 .button {
@@ -94,26 +94,31 @@ p {
     color: beige;
     border: none;
     border-radius: 5px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px auto;
+    padding: 10px 20px;
     font-size: smaller;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 3;
+    margin-top: 2px;
 }
+
+.button:hover {
+    background-color: beige;
+    color: #fd9a7e;
+    border: 3px solid #fd9a7e;
+}
+
 
 .footer {
     background-color: #3d405b;
-    flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    flex-direction: column;
     text-align: center;
     margin-top: auto; /* Asegura que el footer esté pegado al final */
-    position: sticky;
-    top: 0;
+    position: static;
 }
 
 .footer__menu {
@@ -190,7 +195,10 @@ p {
 /* Media Query para tablets*/
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     .header__menu {
-        gap: 25px;
+        display: flex;
+        
+        gap: 20px;
+        
     }
 
     .header__link--logo {
@@ -206,7 +214,7 @@ p {
         width: 100%;
     }
 
-    
+
     .footer__menu {
         gap: 30px;
     }
@@ -262,58 +270,20 @@ p {
         padding-bottom: 20px;
         padding-top: 10px;
         padding-left: 10px;
-        opacity: 0.8; 
-        /* aplica opacidad a las imagenes un 60%*/
     }
 
     .overlay {
-        position: absolute; 
-        /* Los elementos dentro de este contenedor estarán encima de la imagen */
-        top: 20%;  
-        /* Centra el contenido verticalmente */
-        left: 50%; 
-        /* Centra el contenido horizontalmente */
-        transform: translate(-50%, -20%); 
-        /* Ajusta para centrar completamente */
-        text-align: center;
-        z-index: 2;  
-        /* Asegura que esté encima de la imagen */
+        top: 20%;  /* Centra el contenido verticalmente */
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
     }
 
     .overlay-p {
         color: white; 
-        font-size: 16px;
         display: flex;
         flex-direction: row;
-
     }
 
-    
-    .button {
-        background-color: #e07a5f;
-        color: beige;
-        border: none;
-        padding: 10px 20px;
-        margin: 5px auto;
-        cursor: pointer;
-        font-size: 14px;
-        transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-        background-color: #e07a5f;
-        color:beige;
-        border: 3px solid  #fd9a7e;
-    }
-
-    a {
-        text-decoration: none;
-    }
 
     .footer__menu {
         flex-direction: row;
