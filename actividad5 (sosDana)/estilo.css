@@ -17,13 +17,14 @@ h1 {
     font-family: helvetica;
     font-size: 30pt;
     margin-bottom: 20px;
-   }
+}
 
 p {
-     font-family: Helvetica;
+    font-family: Helvetica;
     font-size: 16px;
-     margin-top: 0;
+    text-align: left;
 }
+
 .header {
     background-color: #11a189;
     display: flex;
@@ -80,6 +81,8 @@ p {
     flex-direction: column;
     text-align: center;
     margin-top: auto; /* Asegura que el footer esté pegado al final */
+    position: sticky;
+    bottom: auto;
 }
 
 .footer__menu {
@@ -155,17 +158,33 @@ p {
     .header__menu {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 0.5px;
+        font-size: smaller;
     }
 
     .header__logo img {
         width: 140px;
-        height: 130px;
+        height: auto;
+        font-size: 20px;
     }
 
     .main {
         padding: 10px;
+        
     }
+
+    .section__title {
+        line-height: 1.18; /*define la altura que ocupan los elementos con visualización inline*/
+        text
+        padding-bottom: 5px;
+        text-align: left;
+    }
+
+    .main__desastres {
+        width: 200px;
+        height: 100px;
+    }
+
 
     .footer__menu {
         flex-direction: row;
