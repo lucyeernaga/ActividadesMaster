@@ -11,7 +11,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Asegura que el body tenga al menos la altura completa de la ventana */
+    margin: 0; /* Elimina márgenes extra */
+    padding: 0; /* Elimina rellenos extra */
 }
+
     
 
 .header {
@@ -154,13 +157,6 @@ body {
         align-items: center;
     }
 
-
-    .section {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        text-align: left;
-    }
 
     .picture-container {
         width: 20%; /* 4 img x fila */
