@@ -11,8 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Asegura que el body tenga al menos la altura completa de la ventana */
-    margin: 0; /* Elimina márgenes extra */
-    padding: 0; /* Elimina rellenos extra */
+    overflow-x: hidden; /* Elimina cualquier desbordamiento horizontal */
 }
 
     
@@ -153,10 +152,25 @@ body {
     }
 
     .main {
-        justify-content:center;
+        jflex-direction: column; 
+        justify-content: flex-start; 
         align-items: center;
+        margin: 30px;
     }
 
+
+    .section {
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: center; 
+        text-align: center;
+        position: relative;
+        width: 100%;
+        margin-top: 300px;/* Ajusta para que el contenido no quede pegado a la imagen */
+        z-index: 2;
+        padding: 20px; /* Ajusta el espaciado del contenido */
+        text-align: center;
+    }
 
     .picture-container {
         width: 20%; /* 4 img x fila */
@@ -175,16 +189,16 @@ body {
 
 
      .picture1__1 {
-        position: relative; 
-        top: 50%;
+        position: absolute;
+        top: 0%;
         left: 50%;
-        transform: translate(-50%, -50%); /* Centrado perfecto */
-        border-radius: 30px;
-        box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.2);
-        opacity: 0.95;
-        z-index: 1; 
-        width: 1250px;
+        transform: translateX(-50%);
+        width: 1200px; /* Ajusta el tamaño de la imagen */
         height: auto;
+        border-radius: 30px;
+        opacity: 0.95;
+        box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
     }
 
     .picture1 {
