@@ -332,6 +332,16 @@ body {
         width: 100px;  /* Aumenta el tamaño del logo en pantallas grandes */
     }
 
+    #menu-hamburguesa {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .header__menu.show {
+        display: flex;
+    }
+
     .main {
         padding: 10px;
     }

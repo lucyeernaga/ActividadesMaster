@@ -22,6 +22,7 @@
     list-style: none;
     gap: 20px;
     margin-right: 20px;
+    font-family: sans-serif;
 }
 
 .header__menu--item a {
@@ -86,6 +87,18 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media Query para tablets*/
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     .header__menu {
@@ -105,9 +118,6 @@
         gap: 30px;
     }
 }
-
-
-
 
 
 
