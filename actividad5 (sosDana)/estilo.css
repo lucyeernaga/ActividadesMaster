@@ -41,6 +41,8 @@ body {
     font-size: 13px;
 }
 
+
+
 .main {
     display: flex;
     flex-direction: column;
@@ -323,6 +325,7 @@ body {
 /* Media Query para móviles */
 @media screen and (max-width: 768px) {
     .header__menu {
+        display: none;  /* Oculta el menú por defecto */
         flex-direction: column;
         align-items: center;
         gap: 0.5px;
@@ -332,15 +335,17 @@ body {
         width: 100px;  /* Aumenta el tamaño del logo en pantallas grandes */
     }
 
-    #menu-hamburguesa {
-        display: block;
-        font-size: 30px;
+    #menu-icon {
+        display: block;  /* Asegura que el icono de menú sea visible en móviles */
+        font-size: 30px; /* Ajusta el tamaño del icono */
         cursor: pointer;
     }
 
+
     .header__menu.show {
-        display: flex;
+        display: flex; /* Muestra el menú cuando está activado */
     }
+    
 
     .main {
         padding: 10px;

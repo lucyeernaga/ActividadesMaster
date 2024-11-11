@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
 
-    
-     <link rel="stylesheet" href="estilo.css">
-    
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
 </head>
 <body>
   
@@ -25,7 +26,8 @@
                 <li class="header__menu--item"><a href="#">Ayuda</a></li>
             </ul>
 
-            <i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i>
+            <a href="#" class="icon"><i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i></a>
+            
 
 
         </nav>
@@ -115,6 +117,18 @@
         </div>
     </footer>
     
+
+
+
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const menu = document.querySelector('.header__menu');
+    
+        menuIcon.addEventListener('click', function() {
+            menu.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
 
