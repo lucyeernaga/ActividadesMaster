@@ -172,6 +172,10 @@ body {
         text-align: center;
     }
 
+    .section__h1 {
+        font-size: 40px;
+    }
+
     .picture-container {
         width: 20%; /* 4 img x fila */
     }
@@ -204,7 +208,10 @@ body {
     .picture1 {
         position: relative;
         z-index: 3;
+        margin-bottom: 20px;
     }
+
+
 
     .overlay {
         position: absolute;
