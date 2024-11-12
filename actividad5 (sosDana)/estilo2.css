@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+
 .header {
     background-color: #3d405b;
     display: flex;
@@ -34,17 +35,50 @@
 main {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 30px;
+    font-family: sans-serif;
+    position: static;
+    z-index: 3;
+    line-height: 1.3;
 }
 
 .catastrofe__history {
-    font-size: large;
+    font-size: 16px;
     text-align: center;
 }
 
 .catastrofe__history-title {
     font-size: 30px;
 }
+
+.catastrofe__formulario {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.catastrofe__history-imgs  {
+}
+
+
+button {
+    background-color: #8cacd3;
+    color: beige;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: beige;
+    color: #8cacd3;
+    border: 3px solid #8cacd3;
+}
+
 
 .footer {
     background-color: #3d405b;
@@ -66,14 +100,14 @@ main {
 
 .footer__p {
     color: beige;
-    font-size: small;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
 .footer__menu a {
     color: #f5f5dc;
     text-decoration: none;
-    font-size: small;
+    font-size: 14px;
 }
 
 
@@ -90,6 +124,22 @@ main {
 
     .header__link--logo {
         width: 120px;  
+    }
+
+    .catastrofe__history {
+        padding: 40px;
+    }
+
+
+    .catastrofe__map {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .catastrofe__formulario-p {
+        padding-left: 120px;
+        padding-right: 100px;
     }
 
     
@@ -125,6 +175,15 @@ main {
         padding-left: 10px;
     }
 
+    .catastrofe__history {
+        padding: 30px;
+    }
+
+    .catastrofe__map {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
     
     .footer__menu {
         gap: 30px;
@@ -164,6 +223,16 @@ main {
         color: beige;
     }
 
+    .catastrofe__history {
+        padding: 20px;
+    }
+
+    .catastrofe__map {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        width: 100%;
+    }
     
     .footer__menu {
         flex-direction: row;

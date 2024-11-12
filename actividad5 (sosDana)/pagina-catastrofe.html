@@ -34,61 +34,56 @@
         <article class="catastrofe">
             <section class="catastrofe__history">
                 <h1 class="catastrofe__history-title">Historia de una catástrofe, la dana.</h1>
-                <br><p>La cuenca del Mediterráneo, y especialmente España, es una región marcada por la presencia de numerosos riesgos naturales, los cuales han supuesto una mayor amenaza durante el último siglo a causa del cambio climático: las temperaturas extremas, entre otros factores, han provocado un incremento en la intensidad y frecuencia de fenómenos como las sequías, las olas de calor o las inundaciones.
+                <br><p class="catastrofe__history-p">
+                    La cuenca del Mediterráneo, y especialmente España, es una región marcada por la presencia de numerosos riesgos naturales, los cuales han supuesto una mayor amenaza durante el último siglo a causa del cambio climático: las temperaturas extremas, entre otros factores, han provocado un incremento en la intensidad y frecuencia de fenómenos como las sequías, las olas de calor o las inundaciones.
+                    <br> El último de estos episodios ocurrió el 29 de octubre de 2024, cuando una Depresión Aislada a Niveles Altos, conocida como DANA, azotó el sureste de la Península ibérica, causando daños severos en la infraestructura de localidades como Paiporta, Pincanya, Sedaví o Torrent (todas ellas en la Comunidad Valenciana). Hasta el 4 de noviembre, las cifras provisionales atribuyen a este fenómeno más de 200 fallecidos, y un número indefinido de desaparecidos.   
+                    <br><br>A poco más de una semana del desastre natural provocado por la DANA en Valencia (España), los equipos de rescate y los vecinos siguen intentando recuperar los cuerpos de los muertos y desaparecidos. A la crisis natural le ha seguido una crisis política por la gestión de lo sucedido. A continuación, un repaso cronológico sobre la tragedia. 
+                    El 29 de octubre de 2024 es un día que ya ha pasado a la memoria colectiva de los valencianos, en especial, y a la de todos los españoles en general. Esta catástrofe natural es la peor que ha registrado la región de la Comunitat Valenciana en los últimos 100 años y ya ha sido denominada por muchos como el peor momento de la historia reciente de la zona.
+                    <br><br>Además de los al menos 211 muertos y 93 desaparecidos confirmados, el temporal ha dejado cerca de 950.000 damnificados, daños incuantificables en viviendas, vehículos y vías públicas, entre otros. <br>
+                    Ahora, muchos vecinos y voluntarios se llenan hasta el cuello de barro a diario en un intento de limpiar y paliar los estragos causados por la Dana, mientras los equipos de rescate intentan localizar a los desaparecidos e identificar los cadáveres de las víctimas.
                 </p>
 
-                <br><p> El último de estos episodios ocurrió el 29 de octubre de 2024, cuando una Depresión Aislada a Niveles Altos, conocida como DANA, azotó el sureste de la Península ibérica, causando daños severos en la infraestructura de localidades como Paiporta, Pincanya, Sedaví o Torrent (todas ellas en la Comunidad Valenciana). Hasta el 4 de noviembre, las cifras provisionales atribuyen a este fenómeno más de 200 fallecidos, y un número indefinido de desaparecidos.    
-                </p>
-
-                <p>A poco más de una semana del desastre natural provocado por la DANA en Valencia (España), los equipos de rescate y los vecinos siguen intentando recuperar los cuerpos de los muertos y desaparecidos. A la crisis natural le ha seguido una crisis política por la gestión de lo sucedido. A continuación, un repaso cronológico sobre la tragedia.
-                El 29 de octubre de 2024 es un día que ya ha pasado a la memoria colectiva de los valencianos, en especial, y a la de todos los españoles en general. Esta catástrofe natural es la peor que ha registrado la región de la Comunitat Valenciana en los últimos 100 años y ya ha sido denominada por muchos como el peor momento de la historia reciente de la zona. 
-                </p>
-
-                <br><p>Además de los al menos 211 muertos y 93 desaparecidos confirmados, el temporal ha dejado cerca de 950.000 damnificados, daños incuantificables en viviendas, vehículos y vías públicas, entre otros. 
-
-                Ahora, muchos vecinos y voluntarios se llenan hasta el cuello de barro a diario en un intento de limpiar y paliar los estragos causados por la Dana, mientras los equipos de rescate intentan localizar a los desaparecidos e identificar los cadáveres de las víctimas.</p>
-               
-
-                <div class="history__imgs">
-                    <img src="" alt="" class="history__img">
-                    <img src="" alt="" class="history__img">
+                <div class="catastrofe__history-imgs">
+                    <img src="./img/historiaDanaImg1" alt="historiaDanaImg1" class="history__img">
+                    <img src="./img/historiaDanaImg2" alt="historiaDanaImg2" class="history__img">
                 </div>
             </section>
 
-            
-
             <section class="catastrofe__map">
                 <div style="width: 70%">
-                    <iframe class="iframe" width="50%" height="300" 
+                    <iframe class="iframe" width="100%" height="300" 
                     frameborder="0" 
                     scrolling="no" 
                     marginheight="0" 
                     marginwidth="0" 
                     src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=valencia,%20espa%C3%B1a+(Valencia)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe></div>
             </section>
+            
+            <section class="catastrofe__centros">
+
+            </section>
 
             <section class="catastrofe__formulario">
                 <form action="./pagina-catastrofe.html" method="post">
 
-                        <button class="button">¡Dona aquí!</button><br>
-
+                        <br><button class="button">¡Dona aquí!</button><br>
                             <!-- Nombre -->
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre"  id="nombre" required>
+                            <br><label for="nombre">Nombre</label><br>
+                            <input type="text" name="nombre"  id="nombre" required><br>
 
                             <!-- Email -->
-                            <label for="email">Email</label>
-                            <input type="text" name="email"  id="email" required>
+                            <label for="email">Email</label><br>
+                            <input type="text" name="email"  id="email" required><br>
 
                             <!-- Edad -->
-                            <label for="edad">Edad</label>
-                            <input type="number" name="edad" id="edad" required>
+                            <label for="edad">Edad</label><br>
+                            <input type="number" name="edad" id="edad" required><br>
 
-                            <p>¿Te gustaría colaborar haciendo una donación a 3 de los Ayuntamientos más afectados de la provincia de Valencia, que están trabajando en ayudar a todos los afectados por la tormenta? Por cada euro que pongas, nosotros pondremos otro.   
-                            </p>
+                            <br><p class="catastrofe__formulario-p">¿Te gustaría colaborar haciendo una donación a 3 de los Ayuntamientos más afectados de la provincia de Valencia, que están trabajando en ayudar a todos los afectados por la tormenta? Por cada euro que pongas, nosotros pondremos otro.   
+                            </p><br>
 
                             <!-- Pago -->
-                            <label for="pago">Método de pago</label>
+                            <label for="pago">Método de pago</label><br>
                             <select name="pago" id="pago" required>
                                 <option value="" disabled selected>Elige un método de pago</option>
                                 <option value="tarjeta">Tarjeta de Crédito/Débito</option>
@@ -98,15 +93,12 @@
                             </select>
 
                             <!-- Botón de envío -->
-                            <button type="submit">Enviar</button>
+                            <button class="button" type="submit">Enviar</button>
+
+                            
 
                         
                 </form>
-
-            </section>
-
-
-            <section class="catastrofe__pRecogida">
 
             </section>
         </article>
