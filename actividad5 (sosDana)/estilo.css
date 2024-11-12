@@ -42,7 +42,6 @@ body {
 }
 
 
-
 .main {
     display: flex;
     flex-direction: column;
@@ -154,7 +153,7 @@ body {
     }
 
     .main {
-        jflex-direction: column; 
+        flex-direction: column; 
         justify-content: flex-start; 
         align-items: center;
         margin: 30px;
@@ -339,6 +338,7 @@ body {
         display: block;  /* Asegura que el icono de menú sea visible en móviles */
         font-size: 30px; /* Ajusta el tamaño del icono */
         cursor: pointer;
+        color: beige;
     }
 
 

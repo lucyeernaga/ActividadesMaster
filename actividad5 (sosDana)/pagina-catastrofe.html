@@ -24,6 +24,7 @@
                 <li class="header__menu--item"><a href="./pagina-catastrofe.html">Noticias</a></li>
                 <li class="header__menu--item"><a href="#">Ayuda</a></li>
             </ul>
+            <a href="#" class="icon"><i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i></a>
         </nav>
     </header>
 
@@ -32,20 +33,83 @@
     <main>
         <article class="catastrofe">
             <section class="catastrofe__history">
-                <h1>Historia de una catástrofe, la dana.</h1>
+                <h1 class="catastrofe__history-title">Historia de una catástrofe, la dana.</h1>
+                <br><p>La cuenca del Mediterráneo, y especialmente España, es una región marcada por la presencia de numerosos riesgos naturales, los cuales han supuesto una mayor amenaza durante el último siglo a causa del cambio climático: las temperaturas extremas, entre otros factores, han provocado un incremento en la intensidad y frecuencia de fenómenos como las sequías, las olas de calor o las inundaciones.
+                </p>
+
+                <br><p> El último de estos episodios ocurrió el 29 de octubre de 2024, cuando una Depresión Aislada a Niveles Altos, conocida como DANA, azotó el sureste de la Península ibérica, causando daños severos en la infraestructura de localidades como Paiporta, Pincanya, Sedaví o Torrent (todas ellas en la Comunidad Valenciana). Hasta el 4 de noviembre, las cifras provisionales atribuyen a este fenómeno más de 200 fallecidos, y un número indefinido de desaparecidos.    
+                </p>
+
+                <p>A poco más de una semana del desastre natural provocado por la DANA en Valencia (España), los equipos de rescate y los vecinos siguen intentando recuperar los cuerpos de los muertos y desaparecidos. A la crisis natural le ha seguido una crisis política por la gestión de lo sucedido. A continuación, un repaso cronológico sobre la tragedia.
+                El 29 de octubre de 2024 es un día que ya ha pasado a la memoria colectiva de los valencianos, en especial, y a la de todos los españoles en general. Esta catástrofe natural es la peor que ha registrado la región de la Comunitat Valenciana en los últimos 100 años y ya ha sido denominada por muchos como el peor momento de la historia reciente de la zona. 
+                </p>
+
+                <br><p>Además de los al menos 211 muertos y 93 desaparecidos confirmados, el temporal ha dejado cerca de 950.000 damnificados, daños incuantificables en viviendas, vehículos y vías públicas, entre otros. 
+
+                Ahora, muchos vecinos y voluntarios se llenan hasta el cuello de barro a diario en un intento de limpiar y paliar los estragos causados por la Dana, mientras los equipos de rescate intentan localizar a los desaparecidos e identificar los cadáveres de las víctimas.</p>
+               
+
+                <div class="history__imgs">
+                    <img src="" alt="" class="history__img">
+                    <img src="" alt="" class="history__img">
+                </div>
+            </section>
+
+            
+
+            <section class="catastrofe__map">
+                <div style="width: 70%">
+                    <iframe class="iframe" width="50%" height="300" 
+                    frameborder="0" 
+                    scrolling="no" 
+                    marginheight="0" 
+                    marginwidth="0" 
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=valencia,%20espa%C3%B1a+(Valencia)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe></div>
+            </section>
+
+            <section class="catastrofe__formulario">
+                <form action="./pagina-catastrofe.html" method="post">
+
+                        <button class="button">¡Dona aquí!</button><br>
+
+                            <!-- Nombre -->
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre"  id="nombre" required>
+
+                            <!-- Email -->
+                            <label for="email">Email</label>
+                            <input type="text" name="email"  id="email" required>
+
+                            <!-- Edad -->
+                            <label for="edad">Edad</label>
+                            <input type="number" name="edad" id="edad" required>
+
+                            <p>¿Te gustaría colaborar haciendo una donación a 3 de los Ayuntamientos más afectados de la provincia de Valencia, que están trabajando en ayudar a todos los afectados por la tormenta? Por cada euro que pongas, nosotros pondremos otro.   
+                            </p>
+
+                            <!-- Pago -->
+                            <label for="pago">Método de pago</label>
+                            <select name="pago" id="pago" required>
+                                <option value="" disabled selected>Elige un método de pago</option>
+                                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="transferencia">Transferencia Bancaria</option>
+                                <option value="efectivo">Efectivo</option>
+                            </select>
+
+                            <!-- Botón de envío -->
+                            <button type="submit">Enviar</button>
+
+                        
+                </form>
 
             </section>
 
-            <section class="catastrofe__mapa">
+
+            <section class="catastrofe__pRecogida">
 
             </section>
-
-            section.catastrofe__
-
-
         </article>
-
-
     </main>
 
 
@@ -62,5 +126,14 @@
             </ul>
     </div>
 </footer>
+
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const menu = document.querySelector('.header__menu');
+
+    menuIcon.addEventListener('click', function() {
+        menu.classList.toggle('show');
+    });
+</script>
 </body>
 </html>

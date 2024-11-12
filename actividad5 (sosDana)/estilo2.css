@@ -31,6 +31,20 @@
     font-size: 13px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.catastrofe__history {
+    font-size: large;
+    text-align: center;
+}
+
+.catastrofe__history-title {
+    font-size: 30px;
+}
 
 .footer {
     background-color: #3d405b;
@@ -133,13 +147,21 @@
 /* Media Query para móviles */
 @media screen and (max-width: 768px) {
     .header__menu {
+        display: none;  /* Oculta el menú por defecto */
         flex-direction: column;
         align-items: center;
         gap: 0.5px;
     }
 
     .header__link--logo {
-        width: 100px;  /* Aumenta el tamaño del logo en pantallas grandes */
+        width: 100px; 
+    }
+
+    #menu-icon {
+        display: block;  /* Asegura que el icono de menú sea visible en móviles */
+        font-size: 30px; /* Ajusta el tamaño del icono */
+        cursor: pointer;
+        color: beige;
     }
 
     
