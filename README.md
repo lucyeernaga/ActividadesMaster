@@ -40,3 +40,16 @@ En este caso, 5px significa que la sombra se expandirá 5 píxeles fuera del bor
 - object-fit: fill; (ocupa todo el espacio)
 - object-fit: cover; (ocupa todo el espacio cortando la imagen)
 - object-fit: contain; (agrega barras para completar)
+
+
+
+
+
+
+
+
+
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas
