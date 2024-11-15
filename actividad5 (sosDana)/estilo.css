@@ -66,6 +66,7 @@ body {
 .picture-container {
     position: relative; /* Permite posicionar elementos dentro de este contenedor */
     width: 100%;
+    
 }
 
 .picture1, .picture1__1 {
