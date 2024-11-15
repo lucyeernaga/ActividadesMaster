@@ -14,8 +14,6 @@ body {
     overflow-x: hidden; /* Elimina cualquier desbordamiento horizontal */
 }
 
-    
-
 .header {
     background-color: #3d405b;
     display: flex;
@@ -40,7 +38,6 @@ body {
     color: rgb(255, 255, 241);
     font-size: 13px;
 }
-
 
 .main {
     display: flex;
@@ -86,14 +83,14 @@ body {
 }
 
 .button {
-    background-color: #8a8cba;
+    background-color: #8cacd3;
     color: beige;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: smaller;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s linear; 
     z-index: 3;
     margin-top: 2px;
     font-size: 12px;
@@ -101,10 +98,9 @@ body {
 
 .button:hover {
     background-color: beige;
-    color: #fd9a7e;
-    border: 3px solid #fd9a7e;
+    color: #8cacd3;
+    border: 3px solid #8cacd3;
 }
-
 
 .footer {
     background-color: #3d405b;
@@ -159,7 +155,6 @@ body {
         align-items: center;
     }
 
-
     .section {
         flex-direction: column;
         justify-content: flex-start; 
@@ -192,7 +187,6 @@ body {
         height: 200px;
     }
 
-
      .picture1__1 {
         position: absolute;
         top: 0%;
@@ -212,8 +206,6 @@ body {
         margin-bottom: 20px;
     }
 
-
-
     .overlay {
         position: absolute;
         background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
@@ -230,7 +222,6 @@ body {
 
     }
     
-
     .footer__menu {
         gap: 30px;
     }
@@ -274,7 +265,6 @@ body {
         width: 48%; /* 2 img x fila */
     }
     
-    
     .picture1__1 {
         position: relative; /* Cambia la posición a relative si el absolute está causando problemas */
         top: 50%;
@@ -308,7 +298,6 @@ body {
         border-radius: 15px;
         z-index: 2; /* Asegura que el overlay esté encima de la imagen */
     }
-
 
     .footer__menu {
         gap: 30px;
@@ -345,7 +334,6 @@ body {
         color: beige;
     }
 
-
     .header__menu.show {
         display: flex; /* Muestra el menú cuando está activado */
     }
@@ -358,7 +346,6 @@ body {
         padding: 10px;
     }
 
-
     .main__img picture {
         padding-left: 20px;
         position: relative;  
@@ -367,12 +354,10 @@ body {
         /* Las imágenes estarán debajo del header */
     }
 
-
     .picture1, .picture1__1 {
         width: 90%;  
         height: 250px;
     }
-
 
     .overlay {
         position: absolute;
@@ -391,8 +376,6 @@ body {
         color: beige;
         border-radius: 15px;
     }
-
-    
 
     .footer__menu {
         flex-direction: row;
