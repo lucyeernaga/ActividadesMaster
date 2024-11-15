@@ -5,7 +5,6 @@
     padding: 0;
 }
 
-
 .header {
     background-color: #3d405b;
     display: flex;
@@ -45,10 +44,73 @@ main {
 .catastrofe__history {
     font-size: 16px;
     text-align: center;
+    line-height: 1.3;
 }
 
 .catastrofe__history-title {
     font-size: 30px;
+}
+
+.catastrofe__map-centros {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 10px; 
+    margin-top: 30px;
+}
+
+.catastrofe__centros {
+    background-color: #f4f4f4; /* Fondo para la caja de información */
+    max-height: 200px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+
+.catastrofe__map {
+    width: 100%;
+    /* El iframe se ajustará al tamaño de su contenedor */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.catastrofe__centrosP {
+    font-size: small;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.catastrofe__centros i {
+    font-size: 15px; /*tamaño de los iconos*/
+    color: #333;
+    margin-right: 10px;
+    vertical-align: middle; 
+}
+
+.catastrofe__centros-info {
+    background-color: rgb(246, 246, 238);
+    color: #2e3d49;
+}
+
+.catastrofe__centros h5 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2e3d49;
+}
+
+.catastrofe__centros h3 {
+    font-size: 20px;
+    color: #2e3d49;
+}
+
+.catastrofe__centros-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
 .catastrofe__formulario {
@@ -65,7 +127,6 @@ main {
     margin-top: 35px; 
 }
 
-
 .history__img {
     width: 100%;
     box-shadow: 6px 9px 13px rgba(0, 0, 0, 0.2);;
@@ -78,7 +139,6 @@ main {
 .info {
     padding: 30px;
 }
-
 
 #mostrarBtn {
     background-color: #8cacd3;
@@ -109,7 +169,6 @@ button {
     color: #8cacd3;
     border: 3px solid #8cacd3;
 }
-
 
 .footer {
     background-color: #3d405b;
@@ -151,6 +210,8 @@ button {
 @media screen and (min-width: 1024px) {
     .header__menu {
         gap: 30px;
+        padding-top: 30px;
+        display: flex;
     }
 
     .header__link--logo {
@@ -167,6 +228,11 @@ button {
         padding: 20px;
     }
 
+    .catastrofe__centros {
+        padding-left: 100px;
+        max-height: 400px;
+    }
+
     .history__img {
         width: 100%;
         max-width: 40em; /*tamaño max para q las img no sean tan grandes*/
@@ -178,6 +244,10 @@ button {
     .catastrofe__formulario {
         padding-left: 120px;
         padding-right: 100px;
+    }
+
+    #menu-icon {
+        display: none
     }
 
     .footer__menu {
@@ -198,12 +268,15 @@ button {
 
 
 
+
+
 /* Media Query para tablets*/
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     .header__menu {
         display: flex;
         font-size: smaller;
         gap: 20px;
+        padding-top: 30px;
         
     }
 
@@ -219,11 +292,16 @@ button {
     .catastrofe__map {
         display: flex;
         justify-content: center;
-        padding: 20px;
+        padding: 0px 20px 20px 20px;
     }
 
     .catastrofe__history-imgs {
         flex-wrap: wrap;
+    }
+
+    .catastrofe__centros {
+        padding-left: 100px;
+        max-height: 340px;
     }
 
     .history__img {
@@ -232,6 +310,10 @@ button {
         height: auto;
         border-radius: 10px;
         object-fit: cover;  /* las img cubren el espacio sin distorsionarse */
+    }
+
+    #menu-icon {
+        display: none
     }
 
     .footer__menu {
@@ -281,6 +363,19 @@ button {
         padding: 20px;
     }
 
+    .catastrofe__history-imgs {
+        flex-wrap: wrap;
+    }
+
+    .catastrofe__map-centros {
+        grid-template-columns: 1fr; /* Coloca los elementos uno debajo del otro */
+    }
+
+    .catastrofe__centros {
+        padding-left: 30px;
+        max-height: 270px;
+    }
+
     .catastrofe__map {
         display: flex;
         justify-content: center;
@@ -288,8 +383,8 @@ button {
         width: 100%;
     }
 
-    .catastrofe__history-imgs {
-        flex-wrap: wrap;
+    .catastrofe__map iframe {
+        height: 200px; /* Ajustar altura para pantallas más pequeñas */
     }
 
     .history__img {
@@ -304,14 +399,3 @@ button {
         flex-direction: row;
     }
 }
-
-
-
-
-/* 
-
-
-A poco más de una semana del desastre natural provocado por la DANA en Valencia (España), los equipos de rescate y los vecinos siguen intentando recuperar los cuerpos de los muertos y desaparecidos. A la crisis natural le ha seguido una <b>crisis política</b> por la gestión de lo sucedido. A continuación, un repaso cronológico sobre la tragedia. 
-                        El 29 de octubre de 2024 es un día que ya ha pasado a la memoria colectiva de los valencianos, en especial, y a la de todos los españoles en general. Esta catástrofe natural es la peor que ha registrado la región de la Comunitat Valenciana en los últimos 100 años y ya ha sido denominada por muchos como <b>el peor momento de la historia reciente de la zona.</b>
-                        <br><br>Además de los al menos 211 muertos y 93 desaparecidos confirmados, el temporal ha dejado cerca de <b>950.000 damnificados</b>, daños incuantificables en viviendas, vehículos y vías públicas, entre otros. <br>
-                        Ahora, muchos vecinos y voluntarios se llenan hasta el cuello de barro a diario en un intento de limpiar y paliar los estragos causados por la Dana, mientras los equipos de rescate intentan localizar a los desaparecidos e identificar los cadáveres de las víctimas. */
