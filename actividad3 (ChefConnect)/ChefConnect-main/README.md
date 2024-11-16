@@ -1,2 +1,0 @@
-# ChefConnect
- Proyecto de clase
